@@ -1,0 +1,60 @@
+.wrapper {
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-top: none !important;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 10px;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+th {
+  position: relative;
+}
+
+.col-title {
+  display: inline-block;
+  width: 97%;
+}
+
+/*column resizing class*/
+.grip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  cursor: col-resize;
+}
+
+table>thead>tr>th:first-child, table>tbody>tr>td:first-child {
+  position: absolute;
+  width: 50px;
+  left: 50px;
+  top: auto;
+  //border-top: 1px solid black;
+  //border-right: 0;
+}
+
+/*lock second column if needed
+table>thead>tr>th:nth-child(2), table>tbody>tr>td:nth-child(2) {
+  position: absolute;
+  width: 100px;
+  left: 50px;
+  top: auto;
+}*/
+
+.high-lighted {
+  background-color: chartreuse;
+}
